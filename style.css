@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --theme-color: #28223F;
+    --yellow-color: #FDBB09;
+    --card-bg-color: #231E39;
+    --skill-bg-color: #201A36;
+    --btn-color: #3FBFCA;
+    --gray-color: #222222;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: var(--theme-color);
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: var(--btn-color);
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+@media screen and (min-width: 576px) {
+    .container {width: 540px;}
+}
+@media screen and (min-width: 768px) {
+    .container {width: 740px;}
+}
+@media screen and (min-width: 992px) {
+    .container {width: 960px;}
+}
+@media screen and (min-width: 1200px) {
+    .container {width: 1170px;}
+}
+@media screen and (min-width: 1400px) {
+    .container {width: 1370px;}
+}
+.btn {
+    display: inline-block;
+    background-color: var(--btn-color);
+    color: white;
+    padding: 8px 30px;
+    border: 2px solid var(--btn-color);
+    border-radius: 5px;
+}
+.btn-alt {
+    background-color: var(--theme-color);
+}
+
+section {
+    margin-top: 50px;
+}
+section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .container .div {
+    max-width: 400px;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    padding-top: 3rem;
+}
+section .tooltip {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--yellow-color);
+    padding: 3px 15px;
+    border-radius: 4px;
+}
+section img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--btn-color);
+    margin-bottom: 15px;
+}
+section .title {
+    margin-bottom: 8px;
+}
+section .after-title {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+section .desc {
+    margin-bottom: 1.5rem;
+}
+section .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+section .skill-section {
+    background-color: var(--skill-bg-color);
+    padding: 1rem;
+}
+section .skill-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+section .skills {
+    margin: 0 auto;
+    text-align: left;
+}
+section .skill-section span {
+    border: 1px solid white;
+    padding: 5px 8px;
+    margin: 4px;
+    display: inline-block;
+    font-size: 13px;
+}
+.social-section {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 10px 0;
+}
+.social-section i {
+    background-color: var(--btn-color);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.social-section .fa-facebook-f {
+    padding: 10px 14px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--gray-color);
+    width: 100vw;
+    padding: 10px 0;
+}
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    section {
+        margin-top: 20px;
+    }
+}
